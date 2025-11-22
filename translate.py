@@ -79,4 +79,15 @@ def translate(model_dir, sentence):
 
 
 if __name__ == "__main__":
-    print("Translation:", translate("output", "Wie heißt du?"))
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Translate German → English")
+    parser.add_argument("--model_dir", type=str, default="output",
+                        help="Directory containing model.pt and config.json")
+    parser.add_argument("--text", type=str, required=True,
+                        help="German text to translate")
+
+    args = parser.parse_args()
+
+    result = translate(args.model_dir, args.text)
+    print("Translation:", result)
