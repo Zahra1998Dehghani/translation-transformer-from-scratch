@@ -11,7 +11,7 @@ It includes:
 * Multi-Head Attention
 * Both validated through deterministic `pytest` tests
 
-###End-to-end translation model
+### End-to-end translation model
 
 * Encoder–decoder Transformer using PyTorch `nn.Transformer`
 * WMT17 German→English dataset
