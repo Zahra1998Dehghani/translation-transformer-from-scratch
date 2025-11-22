@@ -1,0 +1,6 @@
+torch==2.6.0+cpu
+datasets==4.4.1
+transformers==4.57.1
+sentencepiece==0.2.1
+pytest==9.0.1
+sacremoses==0.1.1
